@@ -5,15 +5,15 @@
  * Detta är övningen som motsvarar avsnitt 2.1 i läroboken Webbserverprogrammering 1
  */
 
-date_default_timezone_set( FIXTHIS);
-setlocale( FIXTHIS );
+date_default_timezone_set("Europe/Stockholm");
+setlocale(LC_ALL, "sv_SE", "Swedish");
 
 header("Content-type: text/html; charset=utf-8"); ?>
 <!DOCTYPE html>
 <html lang="sv">
 <head>
   <meta charset="utf-8" />
-  <title>[Varierande sidtitel som du hittar på själv]</title>
+  <title>DATUM</title>
   <style>
     body {
         font-family: sans-serif;
@@ -22,9 +22,9 @@ header("Content-type: text/html; charset=utf-8"); ?>
   </style>
 </head>
 <body>
-  <h1>[Varierande rubrik som du hittar på själv]</h1>
+  <h1>VAD ÄR DATUMET</h1>
 <?php
-// [Kodblock med output]
+echo "<p>" . strftime("%T") . "</p>\n";
 ?>
 </body>
 </html>

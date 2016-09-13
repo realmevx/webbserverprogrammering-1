@@ -9,5 +9,23 @@
 
 header("Content-type: text/html; charset=utf-8");
 ?>
-FIXME
+<!DOCTYPE HTML>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <title>TITEL</title>
+    <style>
+    body {
+        font-family: sans-serif;
+        /* + tillägg du vill göra för att göra sidan lite snyggare */
+    }
+    </style>
+</head>
+<body>
+    <h1>TITEL</h1>
+<?php
+
+?>  
+</body>
+</html>
 
